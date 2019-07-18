@@ -1,8 +1,9 @@
 //#include "hello.h"
 //#include "shaders.hpp"
-#include "textures/textures.hpp"
+//#include "textures/textures.hpp"
+#include "lighting/light.hpp"
 
 int main()
 {
-    return doShit3();
+    return Light::main();
 }

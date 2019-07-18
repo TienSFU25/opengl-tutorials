@@ -13,6 +13,7 @@
 		CE32F81422CEAF2B00873154 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE32F81322CEAF2B00873154 /* OpenGL.framework */; };
 		CE32F81622CEB1D600873154 /* glad.c in Sources */ = {isa = PBXBuildFile; fileRef = CE32F81522CEB1D600873154 /* glad.c */; };
 		CE7D8ABD22DEA4EE000BB6FD /* textures.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE7D8ABB22DEA4EE000BB6FD /* textures.cpp */; };
+		CE7D8AC722E100EF000BB6FD /* light.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE7D8AC522E100EF000BB6FD /* light.cpp */; };
 		CE7E7CD322DA7E8B00396A95 /* hello.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE7E7CD222DA7E8B00396A95 /* hello.cpp */; };
 		CE7E7CD922DA8E8C00396A95 /* common.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE7E7CD722DA8E8C00396A95 /* common.cpp */; };
 		CE7E7CDC22DA8F0500396A95 /* shaders.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE7E7CDA22DA8F0500396A95 /* shaders.cpp */; };
@@ -45,6 +46,12 @@
 		CE7D8AC122DEAD9E000BB6FD /* wall.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wall.jpg; sourceTree = "<group>"; };
 		CE7D8AC222DFAC6A000BB6FD /* linh5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = linh5.jpg; sourceTree = "<group>"; };
 		CE7D8AC322DFCE9D000BB6FD /* Camera.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Camera.h; sourceTree = "<group>"; };
+		CE7D8AC522E100EF000BB6FD /* light.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = light.cpp; sourceTree = "<group>"; };
+		CE7D8AC622E100EF000BB6FD /* light.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = light.hpp; sourceTree = "<group>"; };
+		CE7D8AC822E10562000BB6FD /* 1.lamp.vs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = 1.lamp.vs; sourceTree = "<group>"; };
+		CE7D8AC922E10563000BB6FD /* 1.colors.vs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = 1.colors.vs; sourceTree = "<group>"; };
+		CE7D8ACA22E10563000BB6FD /* 1.lamp.fs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = 1.lamp.fs; sourceTree = "<group>"; };
+		CE7D8ACB22E10563000BB6FD /* 1.colors.fs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = 1.colors.fs; sourceTree = "<group>"; };
 		CE7E7CD222DA7E8B00396A95 /* hello.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = hello.cpp; sourceTree = "<group>"; };
 		CE7E7CD622DA827100396A95 /* hello.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = hello.h; sourceTree = "<group>"; };
 		CE7E7CD722DA8E8C00396A95 /* common.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = common.cpp; sourceTree = "<group>"; };
@@ -90,6 +97,7 @@
 		CE32F80622CEAD2800873154 /* hiopengl */ = {
 			isa = PBXGroup;
 			children = (
+				CE7D8AC422E100D1000BB6FD /* lighting */,
 				CE7D8ABA22DEA46E000BB6FD /* textures */,
 				CE7D8AB922DEA429000BB6FD /* shared */,
 				CE7D8AB822DEA3F7000BB6FD /* shadey */,
@@ -145,6 +153,19 @@
 				CE7D8ABF22DEA54B000BB6FD /* 4.2.texture.fs */,
 			);
 			path = textures;
+			sourceTree = "<group>";
+		};
+		CE7D8AC422E100D1000BB6FD /* lighting */ = {
+			isa = PBXGroup;
+			children = (
+				CE7D8ACB22E10563000BB6FD /* 1.colors.fs */,
+				CE7D8AC922E10563000BB6FD /* 1.colors.vs */,
+				CE7D8ACA22E10563000BB6FD /* 1.lamp.fs */,
+				CE7D8AC822E10562000BB6FD /* 1.lamp.vs */,
+				CE7D8AC522E100EF000BB6FD /* light.cpp */,
+				CE7D8AC622E100EF000BB6FD /* light.hpp */,
+			);
+			path = lighting;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,6 +228,7 @@
 				CE32F80822CEAD2800873154 /* main.cpp in Sources */,
 				CE7E7CDC22DA8F0500396A95 /* shaders.cpp in Sources */,
 				CE7E7CD322DA7E8B00396A95 /* hello.cpp in Sources */,
+				CE7D8AC722E100EF000BB6FD /* light.cpp in Sources */,
 				CE32F81622CEB1D600873154 /* glad.c in Sources */,
 				CE7D8ABD22DEA4EE000BB6FD /* textures.cpp in Sources */,
 			);
