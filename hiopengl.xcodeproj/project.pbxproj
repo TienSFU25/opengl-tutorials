@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE2C854A22E25B2B00A3ABBA /* model_loading.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE2C854922E25B2B00A3ABBA /* model_loading.cpp */; };
 		CE32F80822CEAD2800873154 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE32F80722CEAD2800873154 /* main.cpp */; };
 		CE32F81122CEAF1E00873154 /* libglfw.3.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CE32F80F22CEAF1E00873154 /* libglfw.3.3.dylib */; };
 		CE32F81222CEAF1E00873154 /* libGLEW.2.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CE32F81022CEAF1E00873154 /* libGLEW.2.1.0.dylib */; };
@@ -32,6 +33,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		CE2C854722E25A5000A3ABBA /* mesh.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mesh.h; sourceTree = "<group>"; };
+		CE2C854822E25AA800A3ABBA /* model.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = model.h; sourceTree = "<group>"; };
+		CE2C854922E25B2B00A3ABBA /* model_loading.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = model_loading.cpp; sourceTree = "<group>"; };
+		CE2C854B22E25BD200A3ABBA /* model_loading.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = model_loading.fs; sourceTree = "<group>"; };
+		CE2C854C22E25BE100A3ABBA /* model_loading.vs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = model_loading.vs; sourceTree = "<group>"; };
+		CE2C854D22E25D1900A3ABBA /* nanosuit */ = {isa = PBXFileReference; lastKnownFileType = folder; path = nanosuit; sourceTree = "<group>"; };
+		CE2C854E22E25E5E00A3ABBA /* model_loading.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = model_loading.h; sourceTree = "<group>"; };
 		CE32F80422CEAD2800873154 /* hiopengl */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = hiopengl; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE32F80722CEAD2800873154 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		CE32F80F22CEAF1E00873154 /* libglfw.3.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw.3.3.dylib; path = ../../../../../../usr/local/lib/libglfw.3.3.dylib; sourceTree = "<group>"; };
@@ -79,6 +87,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE2C854622E25A2600A3ABBA /* model */ = {
+			isa = PBXGroup;
+			children = (
+				CE2C854D22E25D1900A3ABBA /* nanosuit */,
+				CE2C854722E25A5000A3ABBA /* mesh.h */,
+				CE2C854822E25AA800A3ABBA /* model.h */,
+				CE2C854922E25B2B00A3ABBA /* model_loading.cpp */,
+				CE2C854B22E25BD200A3ABBA /* model_loading.fs */,
+				CE2C854C22E25BE100A3ABBA /* model_loading.vs */,
+				CE2C854E22E25E5E00A3ABBA /* model_loading.h */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
 		CE32F7FB22CEAD2800873154 = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +121,7 @@
 		CE32F80622CEAD2800873154 /* hiopengl */ = {
 			isa = PBXGroup;
 			children = (
+				CE2C854622E25A2600A3ABBA /* model */,
 				CE7D8AC422E100D1000BB6FD /* lighting */,
 				CE7D8ABA22DEA46E000BB6FD /* textures */,
 				CE7D8AB922DEA429000BB6FD /* shared */,
@@ -228,6 +251,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE2C854A22E25B2B00A3ABBA /* model_loading.cpp in Sources */,
 				CE7E7CD922DA8E8C00396A95 /* common.cpp in Sources */,
 				CE32F80822CEAD2800873154 /* main.cpp in Sources */,
 				CE7E7CDC22DA8F0500396A95 /* shaders.cpp in Sources */,
@@ -298,6 +322,7 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-lassimp";
 				SDKROOT = macosx;
 			};
 			name = Debug;
@@ -352,6 +377,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				OTHER_LDFLAGS = "-lassimp";
 				SDKROOT = macosx;
 			};
 			name = Release;
