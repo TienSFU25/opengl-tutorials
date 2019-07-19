@@ -52,6 +52,8 @@
 		CE7D8AC922E10563000BB6FD /* 1.colors.vs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = 1.colors.vs; sourceTree = "<group>"; };
 		CE7D8ACA22E10563000BB6FD /* 1.lamp.fs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = 1.lamp.fs; sourceTree = "<group>"; };
 		CE7D8ACB22E10563000BB6FD /* 1.colors.fs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = 1.colors.fs; sourceTree = "<group>"; };
+		CE7D8ACC22E1445E000BB6FD /* container2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = container2.png; sourceTree = "<group>"; };
+		CE7D8ACD22E14A51000BB6FD /* specMap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = specMap.png; sourceTree = "<group>"; };
 		CE7E7CD222DA7E8B00396A95 /* hello.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = hello.cpp; sourceTree = "<group>"; };
 		CE7E7CD622DA827100396A95 /* hello.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = hello.h; sourceTree = "<group>"; };
 		CE7E7CD722DA8E8C00396A95 /* common.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = common.cpp; sourceTree = "<group>"; };
@@ -158,6 +160,8 @@
 		CE7D8AC422E100D1000BB6FD /* lighting */ = {
 			isa = PBXGroup;
 			children = (
+				CE7D8ACD22E14A51000BB6FD /* specMap.png */,
+				CE7D8ACC22E1445E000BB6FD /* container2.png */,
 				CE7D8ACB22E10563000BB6FD /* 1.colors.fs */,
 				CE7D8AC922E10563000BB6FD /* 1.colors.vs */,
 				CE7D8ACA22E10563000BB6FD /* 1.lamp.fs */,

@@ -21,3 +21,7 @@ const unsigned int SCR_HEIGHT = 600;
 
 void framebuffer_size_callback(GLFWwindow* window, int width, int height);
 void processInput(GLFWwindow *window);
+
+namespace Utils {
+    unsigned int loadTexture(const char* path);
+}
