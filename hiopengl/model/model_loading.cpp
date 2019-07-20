@@ -74,7 +74,9 @@ namespace ModelLoading {
         std::string loc =  "/Users/user/Documents/361/opengl/hiopengl/hiopengl/model/";
         std::string F1 = loc + "model_loading.vs";
         std::string F2 = loc + "model_loading.fs";
-        std::string modelLoc = loc + "nanosuit/nanosuit.obj";
+//        std::string modelLoc = loc + "nanosuit/nanosuit.obj";
+        std::string modelLoc = loc + "sylvanas/Sylvanas.obj";
+//        std::string modelLoc = loc + "llama/Alpaca.obj";
         
         Shader ourShader(F1, F2);
         
@@ -114,6 +116,9 @@ namespace ModelLoading {
             glm::mat4 view = camera.GetViewMatrix();
             ourShader.setMat4("projection", projection);
             ourShader.setMat4("view", view);
+            
+            // send viewer position
+            lightingShader.setVec3("viewPos", camera.Position);
             
             // render the loaded model
             glm::mat4 model = glm::mat4(1.0f);
