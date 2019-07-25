@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		CE2C854A22E25B2B00A3ABBA /* model_loading.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE2C854922E25B2B00A3ABBA /* model_loading.cpp */; };
+		CE2DEB0722E3F62700AB16D5 /* stencil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE2DEB0522E3F62700AB16D5 /* stencil.cpp */; };
 		CE32F80822CEAD2800873154 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE32F80722CEAD2800873154 /* main.cpp */; };
 		CE32F81122CEAF1E00873154 /* libglfw.3.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CE32F80F22CEAF1E00873154 /* libglfw.3.3.dylib */; };
 		CE32F81222CEAF1E00873154 /* libGLEW.2.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CE32F81022CEAF1E00873154 /* libGLEW.2.1.0.dylib */; };
@@ -18,6 +19,7 @@
 		CE7E7CD322DA7E8B00396A95 /* hello.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE7E7CD222DA7E8B00396A95 /* hello.cpp */; };
 		CE7E7CD922DA8E8C00396A95 /* common.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE7E7CD722DA8E8C00396A95 /* common.cpp */; };
 		CE7E7CDC22DA8F0500396A95 /* shaders.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE7E7CDA22DA8F0500396A95 /* shaders.cpp */; };
+		CE89A17622E8FC9D00586655 /* buffy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE89A17422E8FC9D00586655 /* buffy.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -40,6 +42,13 @@
 		CE2C854C22E25BE100A3ABBA /* model_loading.vs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = model_loading.vs; sourceTree = "<group>"; };
 		CE2C854D22E25D1900A3ABBA /* nanosuit */ = {isa = PBXFileReference; lastKnownFileType = folder; path = nanosuit; sourceTree = "<group>"; };
 		CE2C854E22E25E5E00A3ABBA /* model_loading.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = model_loading.h; sourceTree = "<group>"; };
+		CE2DEB0522E3F62700AB16D5 /* stencil.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = stencil.cpp; sourceTree = "<group>"; };
+		CE2DEB0622E3F62700AB16D5 /* stencil.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = stencil.hpp; sourceTree = "<group>"; };
+		CE2DEB0822E3F75A00AB16D5 /* stencil_testing.fs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = stencil_testing.fs; sourceTree = "<group>"; };
+		CE2DEB0922E3F75A00AB16D5 /* marble.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = marble.jpg; sourceTree = "<group>"; };
+		CE2DEB0A22E3F75A00AB16D5 /* stencil_single_color.fs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = stencil_single_color.fs; sourceTree = "<group>"; };
+		CE2DEB0B22E3F75A00AB16D5 /* metal.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = metal.jpeg; sourceTree = "<group>"; };
+		CE2DEB0C22E3F75A00AB16D5 /* stencil_testing.vs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = stencil_testing.vs; sourceTree = "<group>"; };
 		CE32F80422CEAD2800873154 /* hiopengl */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = hiopengl; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE32F80722CEAD2800873154 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		CE32F80F22CEAF1E00873154 /* libglfw.3.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw.3.3.dylib; path = ../../../../../../usr/local/lib/libglfw.3.3.dylib; sourceTree = "<group>"; };
@@ -71,6 +80,12 @@
 		CE7E7CDD22DA8FC400396A95 /* shader_s.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = shader_s.h; sourceTree = "<group>"; };
 		CE7E7CDE22DA958800396A95 /* 3.3.shader.vs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = 3.3.shader.vs; sourceTree = "<group>"; };
 		CE7E7CE022DA95F700396A95 /* 3.3.shader.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = 3.3.shader.fs; sourceTree = "<group>"; };
+		CE89A17422E8FC9D00586655 /* buffy.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = buffy.cpp; sourceTree = "<group>"; };
+		CE89A17522E8FC9D00586655 /* buffy.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = buffy.hpp; sourceTree = "<group>"; };
+		CE89A17722E8FE3200586655 /* framebuffers_screen.fs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = framebuffers_screen.fs; sourceTree = "<group>"; };
+		CE89A17822E8FE3200586655 /* framebuffers.vs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = framebuffers.vs; sourceTree = "<group>"; };
+		CE89A17922E8FE3200586655 /* framebuffers.fs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = framebuffers.fs; sourceTree = "<group>"; };
+		CE89A17A22E8FE3200586655 /* framebuffers_screen.vs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = framebuffers_screen.vs; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +116,20 @@
 			path = model;
 			sourceTree = "<group>";
 		};
+		CE2DEB0422E3F5A500AB16D5 /* stencil */ = {
+			isa = PBXGroup;
+			children = (
+				CE2DEB0922E3F75A00AB16D5 /* marble.jpg */,
+				CE2DEB0B22E3F75A00AB16D5 /* metal.jpeg */,
+				CE2DEB0A22E3F75A00AB16D5 /* stencil_single_color.fs */,
+				CE2DEB0822E3F75A00AB16D5 /* stencil_testing.fs */,
+				CE2DEB0C22E3F75A00AB16D5 /* stencil_testing.vs */,
+				CE2DEB0522E3F62700AB16D5 /* stencil.cpp */,
+				CE2DEB0622E3F62700AB16D5 /* stencil.hpp */,
+			);
+			path = stencil;
+			sourceTree = "<group>";
+		};
 		CE32F7FB22CEAD2800873154 = {
 			isa = PBXGroup;
 			children = (
@@ -121,6 +150,8 @@
 		CE32F80622CEAD2800873154 /* hiopengl */ = {
 			isa = PBXGroup;
 			children = (
+				CE89A17322E8FC7000586655 /* framebuffer */,
+				CE2DEB0422E3F5A500AB16D5 /* stencil */,
 				CE2C854622E25A2600A3ABBA /* model */,
 				CE7D8AC422E100D1000BB6FD /* lighting */,
 				CE7D8ABA22DEA46E000BB6FD /* textures */,
@@ -195,6 +226,19 @@
 			path = lighting;
 			sourceTree = "<group>";
 		};
+		CE89A17322E8FC7000586655 /* framebuffer */ = {
+			isa = PBXGroup;
+			children = (
+				CE89A17722E8FE3200586655 /* framebuffers_screen.fs */,
+				CE89A17A22E8FE3200586655 /* framebuffers_screen.vs */,
+				CE89A17922E8FE3200586655 /* framebuffers.fs */,
+				CE89A17822E8FE3200586655 /* framebuffers.vs */,
+				CE89A17422E8FC9D00586655 /* buffy.cpp */,
+				CE89A17522E8FC9D00586655 /* buffy.hpp */,
+			);
+			path = framebuffer;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -255,6 +299,8 @@
 				CE7E7CD922DA8E8C00396A95 /* common.cpp in Sources */,
 				CE32F80822CEAD2800873154 /* main.cpp in Sources */,
 				CE7E7CDC22DA8F0500396A95 /* shaders.cpp in Sources */,
+				CE89A17622E8FC9D00586655 /* buffy.cpp in Sources */,
+				CE2DEB0722E3F62700AB16D5 /* stencil.cpp in Sources */,
 				CE7E7CD322DA7E8B00396A95 /* hello.cpp in Sources */,
 				CE7D8AC722E100EF000BB6FD /* light.cpp in Sources */,
 				CE32F81622CEB1D600873154 /* glad.c in Sources */,

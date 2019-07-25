@@ -89,6 +89,16 @@ namespace ModelLoading {
         // draw in wireframe
         //glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
         
+        // send point light
+        ourShader.use();
+        ourShader.setVec3("pointLight.position", 0.7f,  0.2f,  2.0f);
+        ourShader.setVec3("pointLight.ambient", 0.05f, 0.05f, 0.05f);
+        ourShader.setVec3("pointLight.diffuse", 0.8f, 0.8f, 0.8f);
+        ourShader.setVec3("pointLight.specular", 1.0f, 1.0f, 1.0f);
+        ourShader.setFloat("pointLight.constant", 1.0f);
+        ourShader.setFloat("pointLight.linear", 0.09);
+        ourShader.setFloat("pointLight.quadratic", 0.032);
+        
         // render loop
         // -----------
         while (!glfwWindowShouldClose(window))
@@ -118,7 +128,7 @@ namespace ModelLoading {
             ourShader.setMat4("view", view);
             
             // send viewer position
-            lightingShader.setVec3("viewPos", camera.Position);
+            ourShader.setVec3("viewPos", camera.Position);
             
             // render the loaded model
             glm::mat4 model = glm::mat4(1.0f);
