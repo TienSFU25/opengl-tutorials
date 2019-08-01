@@ -4,8 +4,10 @@
 #include <glad/glad.h>
 #include <glm/glm.hpp>
 #include <glm/gtc/matrix_transform.hpp>
+#include <glm/gtx/string_cast.hpp>
 
 #include <vector>
+#include <iostream>
 
 // Defines several possible options for camera movement. Used as abstraction to stay away from window-system specific input methods
 enum Camera_Movement {
@@ -115,7 +117,7 @@ public:
         if (Zoom >= 45.0f)
             Zoom = 45.0f;
     }
-    
+
 private:
     // Calculates the front vector from the Camera's (updated) Euler Angles
     void updateCameraVectors()
@@ -129,6 +131,7 @@ private:
         // Also re-calculate the Right and Up vector
         Right = glm::normalize(glm::cross(Front, WorldUp));  // Normalize the vectors, because their length gets closer to 0 the more you look up or down which results in slower movement.
         Up    = glm::normalize(glm::cross(Right, Front));
+//        std::cout << "Front, right, up " << glm::to_string(Front) << ", " << glm::to_string(Right) << ", " << glm::to_string(Up) << std::endl;
     }
 };
 #endif
